@@ -8,11 +8,22 @@ article {
 }
 
 header {
-    color: $blue-color;
+    color: $primary-color;
+}
+
+h2 {
+    a {
+        color: $link-color;
+        &:hover {
+            color:$link-hover;
+        }
+    
+     }
+
 }
 
 .container {
-    background-color: beige;
+    background-color: $background-color;
     width: 100%;
     height: 500px;
     display: flex ;
@@ -35,17 +46,8 @@ header {
 .first {
     //flex: 2;
     order: 2;
-    background-color: $blue-color;
-    h2 {
-        a {
-            color:red;
-            &:hover {
-                color:green;
-            }
-        
-         }
-  
-    }
+    background-color: $primary-color;
+
     
 }
 

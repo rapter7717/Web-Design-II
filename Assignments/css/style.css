@@ -317,6 +317,11 @@ article {
 header {
   color: cadetblue; }
 
+h2 a {
+  color: brown; }
+  h2 a:hover {
+    color: green; }
+
 .container {
   background-color: beige;
   width: 100%;
@@ -347,10 +352,6 @@ header {
       -ms-flex-order: 2;
           order: 2;
   background-color: cadetblue; }
-  .first h2 a {
-    color: red; }
-    .first h2 a:hover {
-      color: green; }
 
 .third {
   -webkit-box-ordinal-group: 3;
