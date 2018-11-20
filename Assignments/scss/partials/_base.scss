@@ -57,3 +57,17 @@ h2 {
 }
 
 
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* For tablets: */
+@media screen and (min-width: 600px) {
+
+}
+
+/* For desktops: */
+@media screen and (min-width: 800px) {
+
+}

@@ -358,4 +358,11 @@ h2 a {
       -ms-flex-order: 2;
           order: 2; }
 
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%; }
+
+/* For tablets: */
+/* For desktops: */
+
 /*# sourceMappingURL=style.css.map */
