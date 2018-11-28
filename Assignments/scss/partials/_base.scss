@@ -16,9 +16,17 @@ article {
 
 header {
     color: $primary-color;
+    display:flex;
+    flex-flow: row wrap;
     height: 30vh;
     //backgound: url(../img/example.img) top center no-repeat fixed ;
     //background-size: cover;
+    img {
+        object-fit: contain;
+        -webkit-animation:wiggle .75s cubic-bezier(1, 0.03, 1, 1);
+        -moz-animation:wiggle .75s cubic-bezier(1, 0.03, 1, 1);
+        animation:wiggle .75s cubic-bezier(1, 0.03, 1, 1);
+    }
     h1 {
         font-weight: 400;
     }
@@ -92,6 +100,14 @@ h2 {
         align-items: center;
         height: 40vh;
     }
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    &:hover {
+        opacity: .75;
+        width: 22vw;
+    }
     // flex-shrink: 1 ;
     //figure {
     //     img {
@@ -128,4 +144,22 @@ h2 {
 
 @media (min-width: 800px) {
     
+}
+
+@-moz-keyframes wiggle { 
+    25% { -moz-transform: rotate(20deg); } 
+    75% { -moz-transform: rotate(-20deg); } 
+    100% { -moz-transform: rotate(0deg); } 
+}
+
+@-webkit-keyframes wiggle { 
+    25% { -webkit-transform: rotate(20deg); } 
+    75% { -webkit-transform: rotate(-20deg); } 
+    100% { -webkit-transform: rotate(0deg); }
+}
+
+@keyframes wiggle { 
+    25% { -webkit-transform: rotate(20deg); transform:rotate(20deg); } 
+    75% { -webkit-transform: rotate(-20deg); transform:rotate(-20deg); } 
+    100% { -webkit-transform: rotate(0deg); transform:rotate(0deg); } 
 }
