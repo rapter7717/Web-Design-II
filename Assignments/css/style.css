@@ -322,29 +322,20 @@ body {
 article {
   color: burlywood; }
 
-header {
-  color: cadetblue; }
-  header img {
-    -o-object-fit: contain;
-       object-fit: contain;
-    -webkit-animation: wiggle 0.75s cubic-bezier(1, 0.03, 1, 1);
-    animation: wiggle 0.75s cubic-bezier(1, 0.03, 1, 1); }
-  header h1 {
-    font-weight: 400;
-    font-size: 2em; }
-    @media (min-width: 800px) {
-      header h1 {
-        font-size: 4em; } }
-  header nav {
-    padding: 2em;
-    font-size: 20px; }
-    header nav .bar .nav-box {
-      background-color: beige;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      height: 3em;
-      width: 200px; }
+header img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-animation: wiggle 0.75s cubic-bezier(1, 0.03, 1, 1);
+  animation: wiggle 0.75s cubic-bezier(1, 0.03, 1, 1); }
+header h1 {
+  font-weight: 400;
+  font-size: 2em; }
+  @media (min-width: 800px) {
+    header h1 {
+      font-size: 4em; } }
+header nav {
+  padding: 2em;
+  font-size: 20px; }
 
 h2 a {
   color: brown; }
@@ -381,6 +372,9 @@ h2 a {
 .biography {
   background-color: burlywood; }
 
+.sidebar {
+  background-color: burlywood; }
+
 .new-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,7 +404,7 @@ h2 a {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      height: 40vh; } }
+      height: 46vh; } }
   .item:hover {
     opacity: .75;
     width: 22vw; }
