@@ -11,7 +11,7 @@ body {
 }
 
 article {
-    color: burlywood;
+    color: $article-color;
 }
 
 header {
@@ -51,6 +51,7 @@ header {
     }
 }
 
+
 h2 {
     a {
         color: $link-color;
@@ -66,26 +67,30 @@ h2 {
 }
 
 .my-container {
-    background-color: $secondary-color;
-    width: 90vw;
-    height: 90vw;
+    background-color: $article-color;
+    // width: 90vw;
+    // height: 90vw;
     display: flex;
     // flex-direction: row;
     // flex-wrap: wrap;
     flex-flow: row wrap;
     //justify-content: space-around; 
     align-items: flex-start;
-    padding: 2% ;
+    //padding: 2% ;
     font-family: $second-font;
 
     @media (min-width: 600px) {
         background-color:$media-background-color;
         align-items: center;
-        height: 500px;
+        //height: 500px;
     }
     @media (min-width: 800px) {
         justify-content: space-evenly; 
     }
+}
+
+.biography {
+    background-color: $article-color;
 }
 
 .new-content{
@@ -103,7 +108,7 @@ h2 {
     padding: 2em;
     margin: 2em;
     border: 1px solid $border-color;
-    background-color: $item-background-color;
+    background-color: $primary-color;
     @media (max-width: 1100px) {
         align-items: center;
         height: 40vh;
