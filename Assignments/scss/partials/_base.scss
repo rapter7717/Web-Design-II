@@ -16,9 +16,10 @@ article {
 
 header {
     color: $primary-color;
-    display:flex;
-    flex-flow: row wrap;
-    height: 30vh;
+    //display:flex;
+    //flex-flow: row wrap;
+    //justify-content: space-between;
+    //height: 30vh;
     //backgound: url(../img/example.img) top center no-repeat fixed ;
     //background-size: cover;
     img {
@@ -29,13 +30,19 @@ header {
     }
     h1 {
         font-weight: 400;
+        font-size: 2em;
+        @media (min-width: 800px) {
+            font-size: 4em;
+        }
     }
     nav {
+        padding: 2em;
+        font-size: 20px;
         .bar{
             .nav-box {
                 background-color: $media-background-color;
-                display:flex;
-                flex-flow: row wrap;
+                //display:flex;
+                //flex-flow: row wrap;
                 align-items: flex-start;
                 height:3em;
                 width:200px;
@@ -58,7 +65,7 @@ h2 {
 
 }
 
-.container {
+.my-container {
     background-color: $secondary-color;
     width: 90vw;
     height: 90vw;
@@ -92,6 +99,7 @@ h2 {
     height: 20vw;
     min-height: 250px;
     min-width: 200px;
+    box-sizing: content-box;
     padding: 2em;
     margin: 2em;
     border: 1px solid $border-color;
