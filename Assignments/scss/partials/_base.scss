@@ -15,6 +15,7 @@ article {
 }
 
 header {
+    color: $primary-color;
     img {
         object-fit: contain;
         -webkit-animation:wiggle .75s cubic-bezier(1, 0.03, 1, 1);
