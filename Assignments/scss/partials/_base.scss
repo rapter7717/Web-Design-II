@@ -51,11 +51,12 @@ h2 {
 }
 
 .my-container {
-    background-color: $article-color;
-    display: flex;
+    background-color: $primary-color;
+    //display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
     font-family: $second-font;
+    text-align: center;
 
     @media (min-width: 600px) {
         background-color:$media-background-color;
@@ -112,6 +113,14 @@ h2 {
 
 .third {
     order: 2;
+}
+
+.slideshow {
+    //display: flex;
+    //align-items: center;
+    //height: 40vh;
+    text-align: center;
+
 }
 
 
